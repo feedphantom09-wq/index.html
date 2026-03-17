@@ -516,7 +516,7 @@ body::after {
 
 .table-head {
   display: grid;
-  grid-template-columns: 30px 1fr 110px 90px 90px 80px 120px 90px 56px 36px;
+  grid-template-columns: 30px 1fr 110px 90px 90px 80px 120px 90px 36px;
   padding: 7px 12px;
   border-bottom: 1px solid var(--border);
   font-family: var(--mono); font-size: 8px;
@@ -527,7 +527,7 @@ body::after {
 
 .token-row {
   display: grid;
-  grid-template-columns: 30px 1fr 110px 90px 90px 80px 120px 90px 56px 36px;
+  grid-template-columns: 30px 1fr 110px 90px 90px 80px 120px 90px 36px;
   padding: 9px 12px;
   border-bottom: 1px solid var(--border);
   align-items: center; cursor: pointer;
@@ -1313,7 +1313,6 @@ body.light-mode body::after { display:none; }
               <span style="text-align:right" class="col-liq">Liq</span>
               <span>Risk</span>
               <span style="text-align:right">MCap</span>
-              <span style="text-align:right">7d</span>
               <span></span>
             </div>
             <div id="token-list">
@@ -2979,7 +2978,6 @@ function renderTable() {
         <div class="risk-score" style="color:${fill}">${t.rugScore}</div>
       </div>
       <div style="text-align:right;font-family:var(--mono);font-size:11px;color:var(--text2)">${fmt$(t.marketCap)}</div>
-      <div class="spark-cell">${spark}</div>
       <button class="star-btn ${t.inWatchlist ? 'starred' : ''}" onclick="toggleWatch(event,'${t.id}')">★</button>
     </div>`;
   }).join('');
